@@ -1,16 +1,9 @@
 # trainfinder
 
-A new Flutter project.
+A community based application for people to track trains and for people to view those tracking trains. 
 
-## Getting Started
+## Setup
 
-This project is a starting point for a Flutter application.
+Clone this repository, fire up VS Code (or IDE of your choice 😕) and run the app.  
+Obviously this app is Flutter BTW.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
