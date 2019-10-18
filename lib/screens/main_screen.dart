@@ -2,6 +2,10 @@ import 'package:circular_bottom_navigation/circular_bottom_navigation.dart';
 import 'package:circular_bottom_navigation/tab_item.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:trainfinder/content_screen/contribution_screen.dart';
+import 'package:trainfinder/content_screen/notices_screen.dart';
+import 'package:trainfinder/content_screen/notification_screen.dart';
+import 'package:trainfinder/content_screen/search_screen.dart';
 
 class Mainscreen extends StatefulWidget {
   @override
@@ -21,23 +25,11 @@ class _MainscreenState extends State<Mainscreen> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Contribution',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Search',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2:  Notices',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 4: Notificarions',
-      style: optionStyle,
-    ),
+  static List<Widget> _widgetOptions = <Widget>[
+    Contribution(),
+    SearchScreen(),
+    NoticesScreen(),
+    NotificationScreen(),
   ];
 
   static int selectedPos = 0;
