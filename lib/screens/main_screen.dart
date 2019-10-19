@@ -15,7 +15,7 @@ class Mainscreen extends StatefulWidget {
 class _MainscreenState extends State<Mainscreen> {
   List<TabItem> tabItems = List.of([
     new TabItem(FontAwesomeIcons.accessibleIcon, "Contribute", Colors.blue,
-        labelStyle: TextStyle(fontWeight: FontWeight.normal)),
+        labelStyle: TextStyle(fontWeight: FontWeight.bold)),
     new TabItem(Icons.search, "Search", Colors.orange,
         labelStyle: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
     new TabItem(Icons.layers, "Notices", Colors.red),
