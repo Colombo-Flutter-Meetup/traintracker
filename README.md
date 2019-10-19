@@ -10,8 +10,11 @@ Obviously this app is Flutter BTW.😁😁
 ##Steps to setup the train tarcker mobile app
 
 1. Make sure that the flutter is installed in your computer.
++
 2.Clone the repository with files.
++
 3.Open CMD
++
 4.In CMD,Change the directory to cloned repository.
 5.Run flutter build apk.
 6.Connect your Android device to your computer with a USB cable.
