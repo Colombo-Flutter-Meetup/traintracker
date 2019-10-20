@@ -15,7 +15,7 @@ class _SearchScreenState extends State<SearchScreen> {
         body: ScaffoldTabBar(
       children: [
         ScreenTab(
-          screen: Text("Search"),
+          screen: _search(),
           tab: BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.times),
             title: Text('Time table'),
@@ -97,11 +97,10 @@ class _SearchScreenState extends State<SearchScreen> {
                 padding: EdgeInsets.only(left: 40),
               ),
               ButtonTheme(
-                minWidth: MediaQuery.of(context).size.width*0.8,
+                minWidth: MediaQuery.of(context).size.width * 0.8,
                 child: RaisedButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)
-                  ),
+                      borderRadius: BorderRadius.circular(10)),
                   onPressed: () {},
                   child: Text("Submit"),
                   color: Colors.teal,
@@ -109,6 +108,63 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ],
           )
+        ],
+      ),
+    );
+  }
+
+  Widget _search() {
+    return Container(
+      child: Column(
+        children: <Widget>[
+          SizedBox(
+            height: 60,
+          ),
+          Center(
+            child: Text(
+              "Station Time Table",
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.teal,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          LabelTextField(
+            hintText: "Station Name",
+            labelText: "Station Name",
+          ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 300),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: IconButton(
+                  icon: Icon(Icons.more),
+                  onPressed: () {},
+                ),
+              ),
+              Text("more"),
+              SizedBox(
+                height: 10,
+              ),
+            ],
+          ),
+          ButtonTheme(
+            minWidth: 300,
+            child: RaisedButton(
+              child: Text("Search"),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10)
+              ),
+              color: Colors.teal,
+              onPressed: (){},
+            ),
+          ),
         ],
       ),
     );
